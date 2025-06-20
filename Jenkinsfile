@@ -30,16 +30,12 @@ pipeline {
     post {
         success {
             echo '✅ Deployment berhasil!'
-            // Kalau mau kirim notifikasi ke Discord/Email bisa ditambahkan di sini
         }
         failure {
             echo '❌ Deployment gagal!'
-            // Bisa juga ditambahkan notifikasi kegagalan
         }
         always {
             echo '📦 Pipeline selesai dijalankan.'
-            // Biasanya untuk cleanup workspace atau hapus file temporary
-            // cleanWs() // uncomment kalau mau otomatis hapus workspace
         }
     }
 }
