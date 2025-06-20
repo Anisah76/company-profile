@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        MINIKUBE_HOME = "/home/anisa"
+        MINIKUBE_HOME = "/home/icha"
     }
     stages {
         stage('Build Docker Image') {
